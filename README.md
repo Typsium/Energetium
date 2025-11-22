@@ -332,20 +332,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - WebAssembly acceleration powered by [Rust](https://www.rust-lang.org/)
 - Thermodynamic data from NIST and CRC sources
 
-## Citation
-
-If you use Energetium in your research or educational materials, please cite:
-
-```bibtex
-@software{energetium2025,
-  title = {Energetium: Chemistry Energetics and Kinetics Calculations for Typst},
-  author = {β-吲哚基丙氨酸},
-  year = {2025},
-  url = {https://github.com/yourusername/energetium},
-  version = {0.1.0}
-}
-```
-
 ## Support
 
 - **Documentation**: [Full documentation](https://github.com/Typsium/energetium/wiki)
