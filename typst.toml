@@ -1,0 +1,14 @@
+[package]
+name = "energetium"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+description = "A Typst package for chemistry energetics and kinetics calculations with WebAssembly acceleration"
+homepage = "https://github.com/yourusername/energetium"
+repository = "https://github.com/yourusername/energetium"
+keywords = ["chemistry", "thermodynamics", "kinetics", "energetics", "calculations", "wasm"]
+categories = ["visualization", "scripting"]
+disciplines = ["chemistry", "physics"]
+compiler = "0.12.0"
+exclude = ["wasm/target/", "*.wasm.map", "examples/"]

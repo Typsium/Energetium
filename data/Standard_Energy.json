@@ -1,0 +1,233 @@
+{
+  "H2O(l)": {
+    "formula": "H2O",
+    "state": "liquid",
+    "delta_Hf": -285.83,
+    "S": 69.91,
+    "delta_Gf": -237.13
+  },
+  "H2O(g)": {
+    "formula": "H2O",
+    "state": "gas",
+    "delta_Hf": -241.82,
+    "S": 188.83,
+    "delta_Gf": -228.57
+  },
+  "CO2(g)": {
+    "formula": "CO2",
+    "state": "gas",
+    "delta_Hf": -393.5,
+    "S": 213.74,
+    "delta_Gf": -394.36
+  },
+  "CO(g)": {
+    "formula": "CO",
+    "state": "gas",
+    "delta_Hf": -110.53,
+    "S": 197.66,
+    "delta_Gf": -137.16
+  },
+  "O2(g)": {
+    "formula": "O2",
+    "state": "gas",
+    "delta_Hf": 0.0,
+    "S": 205.03,
+    "delta_Gf": 0.0
+  },
+  "N2(g)": {
+    "formula": "N2",
+    "state": "gas",
+    "delta_Hf": 0.0,
+    "S": 191.61,
+    "delta_Gf": 0.0
+  },
+  "H2(g)": {
+    "formula": "H2",
+    "state": "gas",
+    "delta_Hf": 0.0,
+    "S": 130.68,
+    "delta_Gf": 0.0
+  },
+  "CH4(g)": {
+    "formula": "CH4",
+    "state": "gas",
+    "delta_Hf": -74.87,
+    "S": 186.25,
+    "delta_Gf": -50.72
+  },
+  "NH3(g)": {
+    "formula": "NH3",
+    "state": "gas",
+    "delta_Hf": -46.11,
+    "S": 192.77,
+    "delta_Gf": -16.45
+  },
+  "NO(g)": {
+    "formula": "NO",
+    "state": "gas",
+    "delta_Hf": 90.25,
+    "S": 210.76,
+    "delta_Gf": 86.55
+  },
+  "N2O(g)": {
+    "formula": "N2O",
+    "state": "gas",
+    "delta_Hf": 82.05,
+    "S": 219.9,
+    "delta_Gf": 103.3
+  },
+  "HCl(g)": {
+    "formula": "HCl",
+    "state": "gas",
+    "delta_Hf": -92.30,
+    "S": 186.69,
+    "delta_Gf": -95.30
+  },
+  "H2SO4(l)": {
+    "formula": "H2SO4",
+    "state": "liquid",
+    "delta_Hf": -814.0,
+    "S": 156.9,
+    "delta_Gf": -744.6
+  },
+  "SO2(g)": {
+    "formula": "SO2",
+    "state": "gas",
+    "delta_Hf": -296.83,
+    "S": 248.2,
+    "delta_Gf": -300.19
+  },
+  "SO3(g)": {
+    "formula": "SO3",
+    "state": "gas",
+    "delta_Hf": -396.0,
+    "S": 256.8,
+    "delta_Gf": -370.4
+  },
+  "NaCl(s)": {
+    "formula": "NaCl",
+    "state": "solid",
+    "delta_Hf": -411.12,
+    "S": 72.10,
+    "delta_Gf": -384.14
+  },
+  "KCl(s)": {
+    "formula": "KCl",
+    "state": "solid",
+    "delta_Hf": -436.7,
+    "S": 82.6,
+    "delta_Gf": -408.5
+  },
+  "CaO(s)": {
+    "formula": "CaO",
+    "state": "solid",
+    "delta_Hf": -635.1,
+    "S": 38.1,
+    "delta_Gf": -603.3
+  },
+  "CaCO3(s)": {
+    "formula": "CaCO3",
+    "state": "solid",
+    "delta_Hf": -1206.9,
+    "S": 92.9,
+    "delta_Gf": -1128.8
+  },
+  "MgO(s)": {
+    "formula": "MgO",
+    "state": "solid",
+    "delta_Hf": -601.6,
+    "S": 26.9,
+    "delta_Gf": -569.6
+  },
+  "Fe2O3(s)": {
+    "formula": "Fe2O3",
+    "state": "solid",
+    "delta_Hf": -824.2,
+    "S": 87.4,
+    "delta_Gf": -742.2
+  },
+  "Fe3O4(s)": {
+    "formula": "Fe3O4",
+    "state": "solid",
+    "delta_Hf": -1118.4,
+    "S": 146.4,
+    "delta_Gf": -1015.4
+  },
+  "MnO2(s)": {
+    "formula": "MnO2",
+    "state": "solid",
+    "delta_Hf": -520.0,
+    "S": 53.0,
+    "delta_Gf": -465.0
+  },
+  "H2S(g)": {
+    "formula": "H2S",
+    "state": "gas",
+    "delta_Hf": -20.6,
+    "S": 205.7,
+    "delta_Gf": -33.6
+  },
+  "HCN(g)": {
+    "formula": "HCN",
+    "state": "gas",
+    "delta_Hf": 135.1,
+    "S": 201.7,
+    "delta_Gf": 124.5
+  },
+  "NaOH(s)": {
+    "formula": "NaOH",
+    "state": "solid",
+    "delta_Hf": -425.6,
+    "S": 64.5,
+    "delta_Gf": -379.5
+  },
+  "KOH(s)": {
+    "formula": "KOH",
+    "state": "solid",
+    "delta_Hf": -424.7,
+    "S": 64.0,
+    "delta_Gf": -360.5
+  },
+  "Ca(OH)2(s)": {
+    "formula": "Ca(OH)2",
+    "state": "solid",
+    "delta_Hf": -986.2,
+    "S": 83.4,
+    "delta_Gf": -897.5
+  },
+  "Mg(OH)2(s)": {
+    "formula": "Mg(OH)2",
+    "state": "solid",
+    "delta_Hf": -924.7,
+    "S": 65.5,
+    "delta_Gf": -833.6
+  },
+  "Na2CO3(s)": {
+    "formula": "Na2CO3",
+    "state": "solid",
+    "delta_Hf": -1130.7,
+    "S": 136.4,
+    "delta_Gf": -1046.8
+  },
+  "K2CO3(s)": {
+    "formula": "K2CO3",
+    "state": "solid",
+    "delta_Hf": -1150.0,
+    "S": 168.0,
+    "delta_Gf": -1070.0
+  },
+  "CH3OH(l)": {
+    "formula": "CH3OH",
+    "state": "liquid",
+    "delta_Hf": -238.6,
+    "S": 126.8,
+    "delta_Gf": -166.2
+  },
+  "C2H5OH(l)": {
+    "formula": "C2H5OH",
+    "state": "liquid",
+    "delta_Hf": -277.0,
+    "S": 160.7,
+    "delta_Gf": -174.8
+  }
+}

@@ -1,0 +1,26 @@
+# Build artifacts
+/target/
+/wasm/target/
+*.wasm.map
+
+# Typst build outputs
+*.pdf
+
+# Editor files
+.vscode/
+.idea/
+.venv/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.orig
+
+# Rust debug
+Cargo.lock
