@@ -24,3 +24,5 @@ Thumbs.db
 
 # Rust debug
 Cargo.lock
+
+!/docs/manual.pdf
