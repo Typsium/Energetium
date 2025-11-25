@@ -14,7 +14,7 @@
 /// - precision: Number of decimal places (default: 2)
 /// - scientific: Use scientific notation (default: auto - uses scientific for very large/small numbers)
 ///
-/// Returns: Formatted string
+/// -> str
 #let format-number(value, precision: 2, scientific: auto) = {
   let use-sci = if scientific == auto {
     // Auto: use scientific for very large or very small numbers
@@ -34,6 +34,7 @@
 }
 
 /// Format a result with value and unit
+/// -> str
 #let format-result(result, precision: 2, scientific: auto) = {
   let formatted-value = format-number(result.value, precision: precision, scientific: scientific)
   if result.unit != "" {
@@ -60,6 +61,7 @@
 /// )
 /// #result.value // -890.3
 /// ```
+/// -> dict
 #let calc-reaction-enthalpy(reactants, products, data: thermo-data) = {
   let reactants-json = json.encode(reactants)
   let products-json = json.encode(products)
@@ -82,6 +84,7 @@
 /// - data: Optional custom thermodynamic data dictionary
 ///
 /// Returns: Dictionary with keys `value` (number) and `unit` (string)
+/// -> dict
 #let calc-reaction-entropy(reactants, products, data: thermo-data) = {
   let reactants-json = json.encode(reactants)
   let products-json = json.encode(products)
@@ -105,6 +108,7 @@
 /// - temp: Temperature in Kelvin (default: 298.15 K)
 ///
 /// Returns: Dictionary with keys `value` (number) and `unit` (string)
+/// -> dict
 #let calc-gibbs-energy(enthalpy, entropy, temp: 298.15) = {
   let result-bytes = energetics-plugin.calculate_gibbs_energy(
     bytes(repr(enthalpy)),
@@ -123,6 +127,7 @@
 /// - temp: Temperature in Kelvin (default: 298.15 K)
 ///
 /// Returns: Dictionary with keys `value` (number) and `unit` (string)
+/// -> dict
 #let calc-equilibrium-constant(gibbs-energy, temp: 298.15) = {
   let result-bytes = energetics-plugin.calculate_equilibrium_constant(
     bytes(repr(gibbs-energy)),
@@ -139,6 +144,7 @@
 /// - data: Optional custom thermodynamic data dictionary
 ///
 /// Returns: Dictionary with keys `delta_Hf`, `S`, and `delta_Gf`
+/// -> dict
 #let get-substance-data(formula, data: thermo-data) = {
   let data-json = json.encode(data)
   
@@ -157,6 +163,7 @@
 /// - products: Array of tuples (formula, coefficient)
 ///
 /// Returns: Content representing the formatted equation
+/// -> content
 #let format-reaction(reactants, products) = {
   let format-side(components) = {
     components.enumerate().map(((i, comp)) => {
@@ -183,6 +190,7 @@
 /// - scientific: Format mode (default: auto)
 ///
 /// Returns: Dictionary with all calculated values
+/// -> dict
 #let analyze-reaction(reactants, products, temp: 298.15, data: thermo-data, precision: 2, scientific: auto) = {
   let delta-h = calc-reaction-enthalpy(reactants, products, data: data)
   let delta-s = calc-reaction-entropy(reactants, products, data: data)
@@ -210,6 +218,7 @@
 /// - data: Optional custom thermodynamic data dictionary
 ///
 /// Returns: Dictionary with detailed analysis including individual substance data
+/// -> dict
 #let detailed-analysis(reactants, products, temp: 298.15, data: thermo-data) = {
   // Get individual substance data
   let reactant-details = reactants.map(((formula, coeff)) => {
@@ -258,6 +267,7 @@
 /// - scientific: Use scientific notation (default: auto)
 ///
 /// Returns: Content with complete analysis
+/// -> content
 #let display-detailed-analysis(analysis, precision: 2, scientific: auto) = {
   [
     = Reaction Equation
@@ -324,6 +334,7 @@
 /// - scientific: Use scientific notation (default: auto)
 ///
 /// Returns: Content representing a formatted table
+/// -> content
 #let display-analysis(analysis, precision: auto, scientific: auto) = {
   let prec = if precision == auto { analysis.precision } else { precision }
   let sci = if scientific == auto { analysis.scientific } else { scientific }
@@ -352,6 +363,7 @@
 /// - scientific: Use scientific notation (default: auto)
 ///
 /// Returns: Formatted content with all data
+/// -> content
 #let calculate-reaction(reactants, products, temp: 298.15, show-details: true, precision: 2, scientific: auto) = {
   if show-details {
     let analysis = detailed-analysis(reactants, products, temp: temp)
