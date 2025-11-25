@@ -1,12 +1,14 @@
 [package]
 name = "energetium"
-version = "0.1.0"
+version = "0.0.1"
 entrypoint = "lib.typ"
-authors = ["Your Name <your.email@example.com>"]
+authors = [
+    "Typsium Community <https://github.com/Typsium>",
+    "β-吲哚基丙氨酸 <https://github.com/tryptophawa>",
+]
 license = "MIT"
-description = "A Typst package for chemistry energetics and kinetics calculations with WebAssembly acceleration"
-homepage = "https://github.com/yourusername/energetium"
-repository = "https://github.com/yourusername/energetium"
+description = "Calculate chemistry energetics and kinetics equations with WebAssembly acceleration."
+repository = "https://github.com/Typsium/Energetium"
 keywords = ["chemistry", "thermodynamics", "kinetics", "energetics", "calculations", "wasm"]
 categories = ["visualization", "scripting"]
 disciplines = ["chemistry", "physics"]
